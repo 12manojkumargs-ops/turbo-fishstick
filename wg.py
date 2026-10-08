@@ -18,7 +18,7 @@ import plotly.graph_objects as go
 # ============================================================
 
 st.set_page_config(
-    page_title="WebGuard AI",
+    page_title="Accessify_mk2",
     page_icon="🛡️",
     layout="wide"
 )
@@ -177,7 +177,7 @@ st.markdown("""
 st.markdown(
     """
     <div class="hero">
-        <h1>🛡️ WebGuard AI</h1>
+        <h1>🛡️  AI</h1>
         <p>
             Explainable, dataset-backed accessibility risk analysis
             for real websites
@@ -474,7 +474,7 @@ def get_html(url):
     headers = {
         "User-Agent":
         "Mozilla/5.0 "
-        "(WebGuard AI accessibility research)"
+        "( AI accessibility research)"
     }
 
     response = requests.get(
@@ -1273,7 +1273,7 @@ if analyze:
 
 
         st.session_state[
-            "webguard_result"
+            "_result"
         ] = (
             final_url,
             features,
@@ -1299,7 +1299,7 @@ if analyze:
 # DISPLAY RESULTS
 # ============================================================
 
-if "webguard_result" in st.session_state:
+if "_result" in st.session_state:
 
     (
         final_url,
@@ -1307,7 +1307,7 @@ if "webguard_result" in st.session_state:
         findings,
         risk
     ) = st.session_state[
-        "webguard_result"
+        "_result"
     ]
 
 
@@ -1786,7 +1786,7 @@ if "webguard_result" in st.session_state:
 
     report = [
 
-        "WEBGUARD AI",
+        "Accessify_mk2",
         "WEBSITE ACCESSIBILITY RISK REPORT",
 
         "",
@@ -1884,7 +1884,7 @@ with st.expander(
 
     st.write(
         """
-        WebGuard AI uses the supplied accessibility
+        Accessify_mk2 uses the supplied accessibility
         dataset as its knowledge base.
 
         The ML pipeline converts violation names,
