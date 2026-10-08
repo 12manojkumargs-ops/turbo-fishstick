@@ -177,7 +177,7 @@ st.markdown("""
 st.markdown(
     """
     <div class="hero">
-        <h1>🛡️  AI</h1>
+        <h1>🛡️ Accessify mk2 AI</h1>
         <p>
             Explainable, dataset-backed accessibility risk analysis
             for real websites
